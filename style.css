@@ -1,0 +1,45 @@
+
+
+.hero {
+    height: 35em;
+    background-image: url('img/hero-bg.jpg');
+}
+
+.about {
+    height: 80vh;
+}
+
+.icon-html,
+.icon-css,
+.icon-js,
+.icon-bs
+{
+    margin-right: 1em;
+    opacity: 85%;
+    font-size: 5vw;
+}
+
+.icon-js,
+.icon-bs
+{
+    margin-right: 0;
+}
+
+.icon-bs {
+   margin-top: 1rem; 
+}
+
+.bio {
+    font-size: 1.1em;
+}
+
+.project-card {
+    height: 15em;
+    box-shadow: 0 0 0 2px #ff0066;
+    border-radius: 5px;
+}
+
+.portfolio {
+    height: 80vh;
+}
+
