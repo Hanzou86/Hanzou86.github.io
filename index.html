@@ -10,38 +10,41 @@
     <script src="https://kit.fontawesome.com/eaf7584e59.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+  <header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand order-1" href="#">James Albert Web Developer</a>
+          <a class="navbar-brand order-1" href="#">James Albert Web Dev</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Top</a>
-              <a class="nav-link" href="#">about</a>
-              <a class="nav-link" href="#">portfolio</a>
+              <a class="nav-link" href="#about">about</a>
+              <a class="nav-link" href="#portfolio">portfolio</a>
+              <a class="nav-link" href="#contact">contact</a>
+
             </div>
           </div>
         </div>
     </nav>
-
+  </header>
+  
     <div class='hero container-fluid'></div>
 
-    <div class="about container text-center">
-      <h2 class='display-3 mt-5'>About</h2>
+  <main>
+    <div id='about' class="about container text-center">
       <div class="row mt-5">
-        <div class="col">
+        <h2 class='display-3 mt-5 mb-5'>About</h2>
+        <div class="col-sm-12 col-md-6">
           <h3 class='display-6'>Background</h3>
-          <p class='bio mt-4'>My name is James and I live in Hamilton Ontario, Canada. I've always had an interest in tech and decided to make a shift
-          to the world of web development in 2020. It took several months for me get a sense of how the industry works and what niche
-          I wanted to move into. Since I have a love for graphic design and the visual arts I decided working in the front end was
-          for me. I made the decision in 2021 to join the online teaching company Treehouse and enroll in their front end tech degree
-          program. The program has been incredibly benfefical and has helped me craft practical skills through a project centric curriculum.
-          Currently I am doing some contract work while I finish my final unit in the tech degree program.</p>
+          <p class='bio fs-5 mt-4'>My name is James and I live in Hamilton Ontario, Canada. I've always had an interest in tech and decided to make a shift
+            to the world of web development in 2020. It took several months for me to get a sense of how the industry works and what niche
+            I wanted to move into. Since I have a love for graphic design and the visual arts I decided working in the front end was
+            for me. In 2021 I decided to join the online teaching company Treehouse and enroll in their front-end tech degree
+            program. The program has been incredibly beneficial, helping me craft practical skills through a project-centric curriculum.
+            Currently, I am doing some contract work while I finish my final unit in the tech degree program.</p>
         </div>
-        <div class="col">
+        <div class="skillset col-sm-12 col-md-6 mt-4 mt-md-0">
             <h3 class='display-6 mb-5'>Skillset</h3>
               <div class='container-fluid'>
               <i class="icon-html fa-solid fa-code "></i>
@@ -52,28 +55,60 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div>  
 
-    <div class="portfolio container-fluid text-center mt-5">
-        <h2 class='display-3'>Portfolio</h2>
-        <p class='mt-3'>The section below contains several projects that I have done using the skills I have learned
-          over the past year.
-        </p>
-        <div class="row mt-4">
-          <div class='col col-sm-6 col-lg-3'>
-            <div class='project-card'></div>
+    <div id='portfolio' class="portfolio container text-center mt-5">
+      <div class='row'>
+        <h2 class='display-3 mb-5'>Portfolio</h2>
+          <div class='col-sm-12 col-md-6'>
+            <div class='project-card one mx-auto my-3'>
+              <h3 class='display-4 text-white'>Interactive Photo Gallery</h3>
+              <button type="button" class="info-btn btn btn-outline-light" onclick="displayGallery()">
+                Info
+              </button>
+            </div>
           </div>
-          <div class="col col-sm-6 col-lg-3">
-            <div class='project-card'></div>
+          <div class="col-sm-12 col-md-6 ">
+            <div class='project-card two mx-auto my-3'>
+              <h3 class='display-4 text-white'>Game Show App</h3>
+              <button type="button" class="info-btn btn btn-outline-light" onclick="displayGame()">
+                Info
+              </button>
+            </div>
           </div>
-          <div class="col col-sm-6 col-lg-3">
-            <div class='project-card'></div>
+          <div class="col-sm-12 col-md-6 ">
+            <div class='project-card three mx-auto my-3'>
+              <h3 class='display-4 text-white'>WebApp Dashboard</h3>
+              <button type="button" class="info-btn btn btn-outline-light" onclick="displayDashboard()">
+                Info
+              </button>
+            </div>
           </div>
-          <div class="col col-sm-6 col-lg-3">
-            <div class='project-card'></div>
+          <div class="col-sm-12 col-md-6 ">
+            <div class='project-card four mx-auto my-3'>
+              <h3 class='display-4 text-white'>Employee Directory</h3>
+              <button type="button" class="info-btn btn btn-outline-light" onclick="displayDirectory()">
+                Info
+              </button>
+            </div>
           </div>
-      </div>
+        </div>
     </div>
+  </main>
+
+  <footer>
+    <h2 id='contact' class='contact display-4'>Contact</h2>
+    <address>
+      <a class='email' href='mailto:zidanemaxout@hotmail.com'>zidanemaxout@hotmail.com</a>
+    </address>
+    <div class='social-media'>
+      <a href='#'><i class="fa-brands fa-facebook"></i></a>
+      <a href='#'><i class="fa-brands fa-twitter"></i></a>
+      <a href='#'><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <script src='app.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

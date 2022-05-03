@@ -1,0 +1,2 @@
+-finish modal design and add content.
+-link project files to portfolio
